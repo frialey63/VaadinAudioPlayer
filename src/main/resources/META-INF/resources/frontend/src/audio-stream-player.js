@@ -45,12 +45,12 @@ export const AudioStreamPlayer = (() => {
             console.log('setting channel interpretation to speakers');
 
             const oscillator = this._context.createOscillator();
-			const gainNode = this._gainNode;
+            const gainNode = this._gainNode;
 
-			oscillator.connect(gainNode);
-			gainNode.connect(this._context.destination);
+            oscillator.connect(gainNode);
+            gainNode.connect(this._context.destination);
 
-			oscillator.channelInterpretation = "speakers";
+            oscillator.channelInterpretation = "speakers";
 
             // Could use StereoPannerNode instead, but it is missing in Safari :-(
             this._pannerNode = this._context.createPanner();
