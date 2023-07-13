@@ -41,7 +41,7 @@ export const AudioStreamPlayer = (() => {
 
             this._multiChannelGainNode = new MultiChannelGainNode(this._gainNode);
 
-			// Set channel interpretation to speakers so that a mono audio source is output on two channels
+            // Set channel interpretation to speakers so that a mono audio source is output on two channels
             console.log('setting channel interpretation to speakers');
 
             const oscillator = this._context.createOscillator();
