@@ -5,7 +5,7 @@
 
     <groupId>org.vaadin.addon.audio</groupId>
     <artifactId>AudioPlayer</artifactId>
-    <version>SNAPSHOT-3.0.2a</version>
+    <version>3.0.2a-SNAPSHOT</version>
     <name>AudioPlayer Add-on</name>
 
     <properties>
